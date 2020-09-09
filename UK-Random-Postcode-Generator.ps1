@@ -17,12 +17,12 @@ BEGIN
 
     function GetLetter
     {
-          return (-join ((65..90) + (97..122) | Get-Random -Count 1 | % {[char]$_})).ToString().ToUpper()
+          return (-join ((65..90)  | Get-Random -Count 1 | % {[char]$_}))
     }
 
     function GetNumber($min, $max)
     {
-          return ( (1) | ForEach-Object { Get-Random -Minimum $min -Maximum $max } ) -join ''
+           return (  Get-Random -Minimum $min -Maximum $max )
     }
 
     function GetFakePostCode
@@ -47,10 +47,11 @@ BEGIN
     do
     {
         $Round++
-        GetFakePostCode #| Out-File -Append D:\Generated_PostCodes_UK_Unverified.log -Encoding utf8
- 
+        GetFakePostCode  #| Out-File -Append D:\Generated_PostCodes_UK_Unverified.log -Encoding utf8
     }
     while($Round -lt $Limiter)
 }
+
+ 
 
 
