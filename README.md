@@ -7,6 +7,6 @@
   <p align="center">
     Dump of Powershell Test Scripts
     <br />
-    <a href="https://jdl-84.github.io/FakePatientPortal/" target="_blank">View Demo</a>
+
   </p>
 </p>
