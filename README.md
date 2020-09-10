@@ -5,7 +5,7 @@
 </a>
   <h3 align="center">Powershell</h3>
   <p align="center">
-    Dump of Powershell Test Scripts
+    Dump of Test Scripts
     <br />
 
   </p>
