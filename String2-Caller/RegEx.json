@@ -1,0 +1,56 @@
+{
+  "RegExTypes": [
+    {
+	  "description": "SQL Statements",
+      "filenamepart": "SQLSTATEMENTS",
+      "regEx": "(?=SELECT|DELETE|UPDATE).*?(?=FROM)"
+    },
+    {
+	  "description": "Password or Auth fields",
+      "filenamepart": "PASSWORD",
+      "regEx": "(?=PASSWORD|AUTH|PWD).*"
+    }
+    ,
+    {	  
+	  "description": "Login or usernames fields",
+      "filenamepart": "LOGIN",
+      "regEx": "(?=Login|Logon|Username|User|UserID).*"
+    }
+        ,
+    {
+	  "description": "URLS",
+      "filenamepart": "URLS",
+      "regEx": "(https?:\\\/\\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\\/\\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})"
+    }
+        ,
+    {
+	  "description": "Email Addresses",
+      "filenamepart": "EMAILS",
+      "regEx": "[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+    }
+        ,
+    {
+	  "description": "IP Addresses",
+      "filenamepart": "IPADDRESSES",
+      "regEx": "(?<!.)\\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4}\\b(?![0-9]|.)"
+    }
+        ,
+    {
+	  "description": "NHS Number format (xxx xxx xxxx) or (xxxxxxxxxx)",
+      "filenamepart": "NHSNUMBER",
+      "regEx": "(?<![0-9])([0-9]{3}(\\s|)[0-9]{3}(\\s|)[0-9]{4})(?![0-9])"
+    }
+         ,
+    {
+	  "description": "Addresses - Street Name",
+      "filenamepart": "ADDRESSES",
+      "regEx": "\\s(road|avenue|street|way|court|place|gardens|cresent)"
+    }
+    ,
+    {
+	 "description": "HL7 v1 Message Types",
+      "filenamepart": "HL7",
+      "regEx": "(PID|MSH|NK1|PV1|OBR|OBX|NTE)\\|*\\|.*?\\|(.+?)\\^?.*"
+    }
+  ]
+}

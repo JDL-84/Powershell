@@ -1,0 +1,36 @@
+NHS REGEX1 Patient,John Smith 4564564564
+NHS REGEX2 Patient,John Smith 456 456 4564
+NHS REGEX3 NO-MATCH FOR 0123456789101112
+ADDRESS TEST 33 Bovil Road, London, SE231BH
+ADDRESS TEST 33 Bovil Road, London, SE231BH
+EMAIL ADDRESS TEST Goo@gle.co.uk
+EMAIL ADDRESS TEST Goo@gle.com
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+DEDUPLICATION TEST abcdefghijklmnopqrstuvwxyz012345679
+HL7 TEST	PID|1||Secret^^Mr^^L||19660107|M|||1600 pennsylvania avenue^^^New Russia^L12
+HL7 TEST	PID|1||0PN^LOOKUP_COUNTRY^CurrentH^^^^^20130314&amp;""|||||""|""|||||""|
+HL7 TEST	PID|1||||||||""|N|""|NSTS08
+HL7 TEST	PD1|||Dr Anthony Fauci' Practice^^N83030|G8299090^Suares^M^^^Dr^^^^^^^General
+HL7 TEST	PD1|||Practitioner
+HL7 TEST	NK1|1|Donald Trump|LOOKUP_PERE_TYPE|1600 pennsylvania avenue|911||NK
+IPADDRESS	127.0.0.1
+IPADDRESS	192.168.0.1
+URL TEST 	www.nottheonion.com
+URL TEST 	http://reddit.com 
+URL TEST 	http://www.hamsterdance.org/hamsterdance/
+LOGIN TEST 	<input type=text value="login"/>
+LOGIN TEST 	<input type=text value="User"/>
+LOGIN TEST 	<input type=text value="Username"/>
+PASSWORD TEST 	<input type=text value="password"/>
+PASSWORD TEST 	<input type=text value="pwd"/>
+PASSWORD TEST 	<input type=text value="Auth"/>
+SQL TEST 		SELECT * FROM FINANCIAL WHERE CLIENT_NAME = 'DONALD, TRUMP'
+SQL TEST 		DELETE * FROM TWITTER WHERE USERID = '@realDonaldTrump' AND TWEET != TRUE

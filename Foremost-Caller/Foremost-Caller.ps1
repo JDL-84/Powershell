@@ -4,10 +4,9 @@
 .DESCRIPTION
    Used to find files within binary objects.  
 .EXAMPLE
-   Foremost-Caller.ps1 -INPUTDIRECTORY "C:\Users\JDL84\Desktop\Input"
-   Generates 1000 random post codes
+   Foremost-Caller.ps1 -INPUTDIRECTORY "C:\Users\JDL84\Desktop\Input   
 .LINK
-   https://github.com/JDL-84/Powershell/tree/master/UK-Random-PostCode-Generator
+   https://github.com/JDL-84/
 #>
 Param(
     [Parameter(Position=1,Mandatory=$true)]
@@ -53,7 +52,7 @@ BEGIN
     
 
     ##CHECK FOR FOREMOST
-    if((Test-Path(("{0}\Foremost.exe" -f (GetScriptDirectory)))) -and (Test-Path(("{0}\Foremost.conf" -f (GetScriptDirectory)))))
+    if((Test-Path($FOREMOSTEXEPATH) -and (Test-Path(("{0}\Foremost.conf" -f (GetScriptDirectory)))))
     {
         if(Test-Path $INPUTDIRECTORY -PathType Container)
         {
