@@ -6,11 +6,18 @@
 .DESCRIPTION
    Used to find files within binary objects.  
 .EXAMPLE
+   Strings2-Caller.ps1 -TYPE SourceFile -FEEDITEM C:\Windows\System32\cmd.exe
+   Reads file into Strings.
+.EXAMPLE
    Strings2-Caller.ps1 -TYPE SourceFolder -FEEDITEM .\input\ 
    Lists all objects in a directory and extracts the strings.
 .EXAMPLE
-   \Strings2-Caller.ps1 -TYPE ProcessName -FEEDITEM 21236 
+   Strings2-Caller.ps1 -TYPE ProcessID -FEEDITEM 21236
    Validates the PID and passes it to strings. 
+.EXAMPLE
+   Strings2-Caller.ps1 -TYPE ProcessName -FEEDITEM WhatsApp
+   Finds all processes by *NAME* and passes each to strings. 
+   Output file is EXE HASH + PID (May have more that 1 running version of same file)
 .LINK
    https://github.com/JDL-84/
 #>

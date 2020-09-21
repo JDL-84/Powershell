@@ -1,0 +1,5 @@
+*.exe
+*.dll
+*.pcap
+Thumbs.db
+desktop.ini
